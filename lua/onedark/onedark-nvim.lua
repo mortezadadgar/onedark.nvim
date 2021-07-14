@@ -17,9 +17,6 @@ local colors = {
   cursor_gray = "#2c323c"
 }
 
-local bg1 = colors.black
-local fg1 = colors.white
-
 local red = colors.red
 local green = colors.green
 local yellow = colors.yellow
@@ -52,8 +49,8 @@ vim.g.terminal_color_12 = blue
 vim.g.terminal_color_13 = magenta
 vim.g.terminal_color_14 = cyan
 vim.g.terminal_color_15 = white
-vim.g.terminal_color_background = bg1
-vim.g.terminal_color_foreground = fg1
+vim.g.terminal_color_background = black
+vim.g.terminal_color_foreground = white
 
 local styles = {
   bold = "bold",
@@ -73,45 +70,45 @@ local italic_underline_strings = styles.italic_underline
 
 local theme = lush(function()
   return {
-    Comment      { fg = comment_gray, gui = italic_strings}, -- any comment
-    ColorColumn  { bg = cursor_gray}, -- used for the columns set with 'colorcolumn'
+    Comment      { fg = comment_gray, gui = italic_strings }, -- any comment
+    ColorColumn  { bg = cursor_gray }, -- used for the columns set with 'colorcolumn'
     -- Conceal      { }, -- placeholder characters substituted for concealed text (see 'conceallevel')
     Cursor       { fg = black, bg = blue }, -- character under the cursor
     CursorColumn { bg = cursor_gray }, -- Screen-column at the cursor, when 'cursorcolumn' is set.
     CursorLine   { bg = cursor_gray }, -- Screen-line at the cursor, when 'cursorline' is set.  Low-priority if foreground (ctermfg OR guifg) is not set.
-    Directory    { fg = blue}, -- directory names (and other special names in listings)
-    DiffAdd      { bg = green, fg = black}, -- diff mode: Added line |diff.txt|
-    DiffChange   { fg = yellow, gui = underline_strings}, -- diff mode: Changed line |diff.txt|
+    Directory    { fg = blue }, -- directory names (and other special names in listings)
+    DiffAdd      { bg = green, fg = black }, -- diff mode: Added line |diff.txt|
+    DiffChange   { fg = yellow, gui = underline_strings }, -- diff mode: Changed line |diff.txt|
     DiffDelete   { bg = red, fg = black }, -- diff mode: Deleted line |diff.txt|
-    DiffText     { bg = yellow, fg = black}, -- diff mode: Changed text within a changed line |diff.txt|
-    EndOfBuffer  { fg = black}, -- filler lines (~) after the end of the buffer.  By default, this is highlighted like |hl-NonText|.
+    DiffText     { bg = yellow, fg = black }, -- diff mode: Changed text within a changed line |diff.txt|
+    EndOfBuffer  { fg = black }, -- filler lines (~) after the end of the buffer.  By default, this is highlighted like |hl-NonText|.
     -- TermCursor   { }, -- cursor in a focused terminal
     -- TermCursorNC { }, -- cursor in an unfocused terminal
     ErrorMsg     { fg = red, gui = bold_strings }, -- error messages on the command line
-    VertSplit    { fg = comment_gray}, -- the column separating vertically split windows
-    Folded       { fg = comment_gray}, -- line used for closed folds
+    VertSplit    { fg = comment_gray }, -- the column separating vertically split windows
+    Folded       { fg = comment_gray }, -- line used for closed folds
     -- FoldColumn   { }, -- 'foldcolumn'
     -- SignColumn   { }, -- column where |signs| are displayed
-    IncSearch    { fg = blue, bg = comment_gray}, -- 'incsearch' highlighting; also used for the text replaced with ":s///c"
+    IncSearch    { fg = blue, bg = comment_gray }, -- 'incsearch' highlighting; also used for the text replaced with ":s///c"
     -- Substitute   { }, -- |:substitute| replacement text highlighting
     LineNr       { fg = comment_gray }, -- Line number for ":number" and ":#" commands, and when 'number' or 'relativenumber' option is set.
     CursorLineNr { fg = white }, -- Like LineNr when 'cursorline' or 'relativenumber' is set for the cursor line.
-    MatchParen   { fg = red, bg = comment_gray}, -- The character under the cursor or just before it, if it is a paired bracket, and its match. |pi_paren.txt|
+    MatchParen   { fg = red, bg = comment_gray }, -- The character under the cursor or just before it, if it is a paired bracket, and its match. |pi_paren.txt|
     -- ModeMsg      { }, -- 'showmode' message (e.g., "-- INSERT -- ")
     -- MsgArea      { }, -- Area for messages and cmdline
     -- MsgSeparator { }, -- Separator for scrolled messages, `msgsep` flag of 'display'
     -- MoreMsg      { }, -- |more-prompt|
     NonText      { fg = white }, -- '@' at the end of the window, characters from 'showbreak' and other characters that do not really exist in the text (e.g., ">" displayed when a double-wide character doesn't fit at the end of the line). See also |hl-EndOfBuffer|.
-    Normal       { fg = white, bg= black}, -- normal text
+    Normal       { fg = white, bg= black }, -- normal text
     NormalFloat  { bg = black}, -- Normal text in floating windows.
     -- NormalNC     { }, -- normal text in non-current windows
-    Pmenu        { fg = white, bg = black}, -- Popup menu: normal item.
-    PmenuSel     { fg = black, bg = blue}, -- Popup menu: selected item.
+    Pmenu        { fg = white, bg = black }, -- Popup menu: normal item.
+    PmenuSel     { fg = black, bg = blue }, -- Popup menu: selected item.
     -- PmenuSbar    { }, -- Popup menu: scrollbar.
     -- PmenuThumb   { }, -- Popup menu: Thumb of the scrollbar.
-    Question     { fg = white, gui = bold_strings}, -- |hit-enter| prompt and yes/no questions
-    QuickFixLine { fg = black, bg = yellow}, -- Current |quickfix| item in the quickfix window. Combined with |hl-CursorLine| when the cursor is there.
-    Search       { fg = black, bg = green}, -- Last search pattern highlighting (see 'hlsearch').  Also used for similar items that need to stand out.
+    Question     { fg = white, gui = bold_strings }, -- |hit-enter| prompt and yes/no questions
+    QuickFixLine { fg = black, bg = yellow }, -- Current |quickfix| item in the quickfix window. Combined with |hl-CursorLine| when the cursor is there.
+    Search       { fg = black, bg = green }, -- Last search pattern highlighting (see 'hlsearch').  Also used for similar items that need to stand out.
     -- SpecialKey   { }, -- Unprintable characters: text displayed differently from what it really is.  But not 'listchars' whitespace. |hl-Whitespace|
     SpellBad     { gui = underline_strings }, -- Word that is not recognized by the spellchecker. |spell| Combined with the highlighting used otherwise. 
     -- SpellCap     { gui = yellow }, -- Word that should start with a capital. |spell| Combined with the highlighting used otherwise.
@@ -121,13 +118,13 @@ local theme = lush(function()
     -- StatusLineNC { }, -- status lines of not-current windows Note: if this is equal to "StatusLine" Vim will use "^^^" in the status line of the current window.
     TabLine      { fg = white, bg = black_dark }, -- tab pages line, not active tab page label
     TabLineFill  { bg = black_dark }, -- tab pages line, where there are no labels
-    TabLineSel   { fg = white, bg = black}, -- tab pages line, active tab page label
+    TabLineSel   { fg = white, bg = black }, -- tab pages line, active tab page label
     -- Title        { }, -- titles for output from ":set all", ":autocmd" etc.
-    Visual       { bg = selection_gray, gui = bold_strings}, -- Visual mode selection
+    Visual       { bg = selection_gray, gui = bold_strings }, -- Visual mode selection
     -- VisualNOS    { }, -- Visual mode selection when vim is "Not Owning the Selection".
-    WarningMsg   { fg = red, bg = selection_gray}, -- warning messages
+    WarningMsg   { fg = red, bg = selection_gray }, -- warning messages
     -- Whitespace   { }, -- "nbsp", "space", "tab" and "trail" in 'listchars'
-    WildMenu     { fg = black, bg = blue}, -- current match in 'wildmenu' completion
+    WildMenu     { fg = black, bg = blue }, -- current match in 'wildmenu' completion
 
     Constant       { fg = cyan }, -- (preferred) any constant
     String         { fg = green }, --   a string constant: "this is a string"
@@ -136,7 +133,7 @@ local theme = lush(function()
     Boolean        { fg = yellow_dark }, --  a boolean constant: TRUE, false
     Float          { fg = yellow_dark }, --    a floating point constant: 2.3e10
 
-    Identifier     { fg = red}, -- (preferred) any variable name
+    Identifier     { fg = red }, -- (preferred) any variable name
     Function       { fg = blue }, -- function name (also: methods for classes)
 
     Statement      { fg = magenta }, -- (preferred) any statement
@@ -158,11 +155,11 @@ local theme = lush(function()
     Structure      { fg = magenta }, --  struct, union, enum, etc.
     Typedef        { fg = magenta }, --  A typedef
 
-    Special        { fg = blue}, -- (preferred) any special symbol
+    Special        { fg = blue }, -- (preferred) any special symbol
     SpecialChar    { fg = green }, --  special character in a constant
-    Tag            { fg = red}, --    you can use CTRL-] on this
+    Tag            { fg = red }, --    you can use CTRL-] on this
     Delimiter      { fg = comment_gray }, --  character that needs attention
-    SpecialComment { fg = comment_gray }, -- special things inside a comment
+    SpecialComment { fg = comment_gray, gui = italic_strings }, -- special things inside a comment
     -- Debug          { }, --    debugging statements
 
     -- Underlined { gui = "underline" }, -- (preferred) text that stands out, HTML links
@@ -211,7 +208,7 @@ local theme = lush(function()
     TSAttribute          { fg = magenta };    -- (unstable) TODO: docs
     TSBoolean            { fg = yellow_dark };    -- For booleans.
     TSCharacter          { fg = green };    -- For characters.
-    TSComment            { fg = comment_gray };    -- For comment blocks.
+    TSComment            { fg = comment_gray, gui = italic_strings };    -- For comment blocks.
     TSConstructor        { fg = blue };    -- For constructor calls and definitions: ` { }` in Lua, and Java constructors.
     TSConditional        { fg = magenta };    -- For keywords related to conditionnals.
     TSConstant           { fg = white };    -- For constants
