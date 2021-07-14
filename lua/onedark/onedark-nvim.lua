@@ -101,6 +101,7 @@ local theme = lush(function()
     NonText      { fg = white }, -- '@' at the end of the window, characters from 'showbreak' and other characters that do not really exist in the text (e.g., ">" displayed when a double-wide character doesn't fit at the end of the line). See also |hl-EndOfBuffer|.
     Normal       { fg = white, bg= black }, -- normal text
     NormalFloat  { bg = black}, -- Normal text in floating windows.
+	FloatBorder  { fg = blue },
     -- NormalNC     { }, -- normal text in non-current windows
     Pmenu        { fg = white, bg = black }, -- Popup menu: normal item.
     PmenuSel     { fg = black, bg = blue }, -- Popup menu: selected item.
@@ -133,7 +134,7 @@ local theme = lush(function()
     Boolean        { fg = yellow_dark }, --  a boolean constant: TRUE, false
     Float          { fg = yellow_dark }, --    a floating point constant: 2.3e10
 
-    Identifier     { fg = red }, -- (preferred) any variable name
+    Identifier     { fg = white }, -- (preferred) any variable name
     Function       { fg = blue }, -- function name (also: methods for classes)
 
     Statement      { fg = magenta }, -- (preferred) any statement
@@ -173,7 +174,7 @@ local theme = lush(function()
 
     Todo           { fg = magenta }, -- (preferred) anything that needs extra attention; mostly the keywords TODO FIXME and XXX
 
-	-- Nvim LSP
+    -- Nvim LSP
     LspReferenceText                     { fg = selection_gray}, -- used for highlighting "text" references
     LspReferenceRead                     { LspReferenceText }, -- used for highlighting "read" references
     LspReferenceWrite                    { LspReferenceText }, -- used for highlighting "write" references
@@ -193,15 +194,15 @@ local theme = lush(function()
     LspDiagnosticsUnderlineInformation   { fg = blue, gui = underline_strings }, -- Used to underline "Information" diagnostics
     LspDiagnosticsUnderlineHint          { fg = cyan, gui = underline_strings }, -- Used to underline "Hint" diagnostics
 
-    -- LspDiagnosticsFloatingError          { }, -- Used to color "Error" diagnostic messages in diagnostics float
-    -- LspDiagnosticsFloatingWarning        { }, -- Used to color "Warning" diagnostic messages in diagnostics float
-    -- LspDiagnosticsFloatingInformation    { }, -- Used to color "Information" diagnostic messages in diagnostics float
-    -- LspDiagnosticsFloatingHint           { }, -- Used to color "Hint" diagnostic messages in diagnostics float
+    LspDiagnosticsFloatingError          { fg = red, gui = underline_strings }, -- Used to color "Error" diagnostic messages in diagnostics float
+    LspDiagnosticsFloatingWarning        { fg = yellow, gui = underline_strings }, -- Used to color "Warning" diagnostic messages in diagnostics float
+    LspDiagnosticsFloatingInformation    { fg = blue, gui = underline_strings }, -- Used to color "Information" diagnostic messages in diagnostics float
+    LspDiagnosticsFloatingHint           { fg = cyan, gui = underline_strings }, -- Used to color "Hint" diagnostic messages in diagnostics float
 
-    -- LspDiagnosticsSignError              { }, -- Used for "Error" signs in sign column
-    -- LspDiagnosticsSignWarning            { }, -- Used for "Warning" signs in sign column
-    -- LspDiagnosticsSignInformation        { }, -- Used for "Information" signs in sign column
-    -- LspDiagnosticsSignHint               { }, -- Used for "Hint" signs in sign column
+    LspDiagnosticsSignError              { fg = red }, -- Used for "Error" signs in sign column
+    LspDiagnosticsSignWarning            { fg = yellow }, -- Used for "Warning" signs in sign column
+    LspDiagnosticsSignInformation        { fg = blue }, -- Used for "Information" signs in sign column
+    LspDiagnosticsSignHint               { fg = cyan }, -- Used for "Hint" signs in sign column
 
 	-- Treesitter
     TSAnnotation         { fg = yellow };    -- For C++/Dart attributes, annotations that can be attached to the code to denote some kind of meta information.
@@ -257,8 +258,8 @@ local theme = lush(function()
     -- TSLiteral            { };    -- Literal text.
     TSURI                { gui = underline_strings };    -- Any URI like a link or email.
 
-	-- Telescope
-	TelescopeBorder      { fg = blue }
+    -- Telescope
+    TelescopeBorder      { fg = blue };
 
   }
 end)
