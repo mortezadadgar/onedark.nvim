@@ -170,7 +170,7 @@ local theme = lush(function()
     -- ("Ignore", below, may be invisible...)
     -- Ignore         { }, -- (preferred) left blank, hidden  |hl-Ignore|
 
-    Error          { fg = black, bg = red }, -- (preferred) any erroneous construct
+    Error          { bg = black }, -- (preferred) any erroneous construct
 
     Todo           { fg = magenta }, -- (preferred) anything that needs extra attention; mostly the keywords TODO FIXME and XXX
 
