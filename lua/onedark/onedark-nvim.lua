@@ -261,6 +261,12 @@ local theme = lush(function()
     -- Telescope
     TelescopeBorder      { fg = blue };
 
+	-- Dashboard
+	DashboardHeader       { fg = blue };
+	DashboardCenter       { fg = comment_gray };
+	DashboardShortcut     { fg = comment_gray };
+	DashboardFooter       { fg = white };
+
   }
 end)
 
