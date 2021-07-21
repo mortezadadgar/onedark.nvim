@@ -120,10 +120,10 @@ local theme = lush(function()
     TabLine      { fg = white, bg = black_dark }, -- tab pages line, not active tab page label
     TabLineFill  { bg = black_dark }, -- tab pages line, where there are no labels
     TabLineSel   { fg = white, bg = black }, -- tab pages line, active tab page label
-    -- Title        { }, -- titles for output from ":set all", ":autocmd" etc.
+    Title        { fg = blue, guid = bold_strings }, -- titles for output from ":set all", ":autocmd" etc.
     Visual       { bg = selection_gray, gui = bold_strings }, -- Visual mode selection
     -- VisualNOS    { }, -- Visual mode selection when vim is "Not Owning the Selection".
-    WarningMsg   { fg = red, bg = selection_gray }, -- warning messages
+    WarningMsg   { fg = red }, -- warning messages
     -- Whitespace   { }, -- "nbsp", "space", "tab" and "trail" in 'listchars'
     WildMenu     { fg = black, bg = blue }, -- current match in 'wildmenu' completion
 
@@ -266,6 +266,12 @@ local theme = lush(function()
 	DashboardCenter       { fg = comment_gray };
 	DashboardShortcut     { fg = comment_gray };
 	DashboardFooter       { fg = white };
+
+	-- VimWiki
+	VimwikiHeader1        { fg = blue, gui = bold_strings };
+	VimwikiHeader2        { fg = green };
+	VimwikiHeader3        { fg = yellow };
+	VimwikiHeader4        { fg = red };
 
   }
 end)
