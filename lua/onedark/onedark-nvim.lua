@@ -273,6 +273,9 @@ local theme = lush(function()
 	VimwikiHeader3        { fg = yellow };
 	VimwikiHeader4        { fg = red };
 
+	-- Clever-f
+	CleverFDefaultLabel   { fg = blue, gui = bold_underline_strings };
+
   }
 end)
 
