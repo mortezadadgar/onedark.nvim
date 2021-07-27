@@ -276,6 +276,16 @@ local theme = lush(function()
 	-- Clever-f
 	CleverFDefaultLabel   { fg = blue, gui = bold_underline_strings };
 
+	-- Nvim-tree
+	NvimTreeNormal           { fg = white, bg = black_dark };
+	NvimTreeFolderIcon       { fg = yellow };
+	NvimTreeOpenedFolderName { fg = white, gui = bold_strings };
+	NvimTreeEmptyFolderName  { fg = white };
+	NvimTreeFolderName    	 { fg = white };
+	NvimTreeVertSplit     	 { fg = black };
+	NvimTreeIndentMarker  	 { fg = comment_gray };
+	NvimTreeSpecialFile   	 { fg = yellow };
+
   }
 end)
 
