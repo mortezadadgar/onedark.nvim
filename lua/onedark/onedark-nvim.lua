@@ -285,6 +285,7 @@ local theme = lush(function()
 	NvimTreeVertSplit     	 { fg = black };
 	NvimTreeIndentMarker  	 { fg = comment_gray };
 	NvimTreeSpecialFile   	 { fg = yellow };
+	NvimTreeRootFolder       { fg = blue };
 
   }
 end)
