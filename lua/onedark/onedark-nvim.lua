@@ -251,7 +251,7 @@ local theme = lush(function()
     TSTag                { fg = red };    -- Tags like html tag names.
     TSTagDelimiter       { fg = white };    -- Tag delimiter like `<` `>` `/`
     TSText               { fg = green };    -- For strings considered text in a markup language.
-    TSEmphasis           { fg = blue };    -- For text to be represented with emphasis.
+    TSEmphasis           { fg = white };    -- For text to be represented with emphasis.
     TSUnderline          { gui = underline_strings };    -- For text to be represented with an underline.
     -- TSStrike             { };    -- For strikethrough text.
     TSTitle              { fg = blue, gui = bold_strings };    -- Text that is part of a title.
