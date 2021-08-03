@@ -249,14 +249,19 @@ local theme = lush(function()
     TSVariableBuiltin    { fg = white };    -- Variable names that are defined by the languages, like `this` or `self`.
 
     TSTag                { fg = red };    -- Tags like html tag names.
+    TSTagAttribute       { fg = yellow_dark };
     TSTagDelimiter       { fg = white };    -- Tag delimiter like `<` `>` `/`
     TSText               { fg = green };    -- For strings considered text in a markup language.
     TSEmphasis           { fg = white };    -- For text to be represented with emphasis.
     TSUnderline          { gui = underline_strings };    -- For text to be represented with an underline.
     -- TSStrike             { };    -- For strikethrough text.
-    TSTitle              { fg = blue, gui = bold_strings };    -- Text that is part of a title.
+    TSTitle              { fg = white };    -- Text that is part of a title.
     -- TSLiteral            { };    -- Literal text.
-    TSURI                { gui = underline_strings };    -- Any URI like a link or email.
+    TSURI                {};    -- Any URI like a link or email.
+
+	-- Css
+    cssTSType            { fg = red };
+    cssTSProperty        { fg = magenta };
 
     -- Telescope
     TelescopeBorder      { fg = blue };
