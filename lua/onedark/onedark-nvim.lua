@@ -274,9 +274,9 @@ local theme = lush(function()
 
 	-- VimWiki
 	VimwikiHeader1        { fg = blue, gui = bold_strings };
-	VimwikiHeader2        { fg = green };
-	VimwikiHeader3        { fg = yellow };
-	VimwikiHeader4        { fg = red };
+	VimwikiHeader2        { fg = magenta, gui = bold_strings };
+	VimwikiHeader3        { fg = cyan, gui = bold_strings };
+	VimwikiHeader4        { fg = cyan, gui = bold_strings };
 
 	-- Clever-f
 	CleverFDefaultLabel   { fg = blue, gui = bold_underline_strings };
