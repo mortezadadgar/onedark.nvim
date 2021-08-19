@@ -292,6 +292,14 @@ local theme = lush(function()
 	NvimTreeSpecialFile   	 { fg = yellow };
 	NvimTreeRootFolder       { fg = blue };
 
+	OrgTODO                  { fg = blue, gui = bold_strings };
+	OrgDONE                  { fg = green, gui = italic_strings };
+	OrgHeadlineLevel1        { fg = blue, gui = bold_strings };
+	OrgHeadlineLevel2        { fg = magenta, gui = bold_strings };
+	OrgHeadlineLevel3        { fg = cyan, gui = bold_strings };
+	OrgHeadlineLevel4        { fg = cyan, gui = bold_strings };
+	org_deadline_scheduled   { fg = comment_gray };
+
   }
 end)
 
