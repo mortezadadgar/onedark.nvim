@@ -292,6 +292,7 @@ local theme = lush(function()
 	NvimTreeSpecialFile   	 { fg = yellow };
 	NvimTreeRootFolder       { fg = blue };
 
+	-- Orgmode
 	OrgTODO                  { fg = blue, gui = bold_strings };
 	OrgDONE                  { fg = green, gui = italic_strings };
 	OrgHeadlineLevel1        { fg = blue, gui = bold_strings };
@@ -300,6 +301,10 @@ local theme = lush(function()
 	OrgHeadlineLevel4        { fg = cyan, gui = bold_strings };
 	org_deadline_scheduled   { fg = comment_gray };
 
+	-- Gitsings
+	GitSignsAdd              { fg = yellow };
+	GitSignsChange           { fg = blue };
+	GitSignsDelete           { fg = red };
   }
 end)
 
