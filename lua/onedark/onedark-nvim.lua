@@ -291,6 +291,7 @@ local theme = lush(function()
 	NvimTreeIndentMarker  	 { fg = comment_gray };
 	NvimTreeSpecialFile   	 { fg = yellow };
 	NvimTreeRootFolder       { fg = blue };
+	NvimTreeSignColumn       { NvimTreeNormal };
 
 	-- Orgmode
 	OrgTODO                  { fg = blue, gui = bold_strings };
