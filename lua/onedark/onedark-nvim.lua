@@ -306,6 +306,9 @@ local theme = lush(function()
 	GitSignsAdd              { fg = yellow };
 	GitSignsChange           { fg = blue };
 	GitSignsDelete           { fg = red };
+
+	-- Nvim-cmp
+	CmpItemAbbrDefault       { fg = comment_gray };
   }
 end)
 
