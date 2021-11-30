@@ -179,30 +179,30 @@ local theme = lush(function()
     LspReferenceRead                     { LspReferenceText }, -- used for highlighting "read" references
     LspReferenceWrite                    { LspReferenceText }, -- used for highlighting "write" references
 
-    LspDiagnosticsDefaultError           { fg = red}, -- Used as the base highlight group. Other LspDiagnostic highlights link to this by default (except Underline)
-    LspDiagnosticsDefaultWarning         { fg = yellow}, -- Used as the base highlight group. Other LspDiagnostic highlights link to this by default (except Underline)
-    LspDiagnosticsDefaultInformation     { fg = blue }, -- Used as the base highlight group. Other LspDiagnostic highlights link to this by default (except Underline)
-    LspDiagnosticsDefaultHint            { fg = cyan}, -- Used as the base highlight group. Other LspDiagnostic highlights link to this by default (except Underline)
+    DiagnosticError                      { fg = red}, -- Used as the base highlight group. Other LspDiagnostic highlights link to this by default (except Underline)
+    DiagnosticWarn                       { fg = yellow}, -- Used as the base highlight group. Other LspDiagnostic highlights link to this by default (except Underline)
+    DiagnosticInfo                       { fg = blue }, -- Used as the base highlight group. Other LspDiagnostic highlights link to this by default (except Underline)
+    DiagnosticHint                       { fg = cyan}, -- Used as the base highlight group. Other LspDiagnostic highlights link to this by default (except Underline)
 
-    LspDiagnosticsVirtualTextError       { fg = red, bg = selection_gray }, -- Used for "Error" diagnostic virtual text
-    LspDiagnosticsVirtualTextWarning     { fg = yellow, bg = selection_gray }, -- Used for "Warning" diagnostic virtual text
-    LspDiagnosticsVirtualTextInformation { fg = blue, bg = selection_gray }, -- Used for "Information" diagnostic virtual text
-    LspDiagnosticsVirtualTextHint        { fg = cyan, bg = selection_gray }, -- Used for "Hint" diagnostic virtual text
+    DiagnosticVirtualTextError           { fg = red, bg = selection_gray }, -- Used for "Error" diagnostic virtual text
+    DiagnosticVirtualTextWarn            { fg = yellow, bg = selection_gray }, -- Used for "Warn" diagnostic virtual text
+    DiagnosticVirtualTextInfo            { fg = blue, bg = selection_gray }, -- Used for "Information" diagnostic virtual text
+    DiagnosticVirtualTextHint            { fg = cyan, bg = selection_gray }, -- Used for "Hint" diagnostic virtual text
 
-    LspDiagnosticsUnderlineError         { fg = red, gui = underline_strings }, -- Used to underline "Error" diagnostics
-    LspDiagnosticsUnderlineWarning       { fg = yellow, gui = underline_strings }, -- Used to underline "Warning" diagnostics
-    LspDiagnosticsUnderlineInformation   { fg = blue, gui = underline_strings }, -- Used to underline "Information" diagnostics
-    LspDiagnosticsUnderlineHint          { fg = cyan, gui = underline_strings }, -- Used to underline "Hint" diagnostics
+    DiagnosticUnderlineError             { fg = red, gui = underline_strings }, -- Used to underline "Error" diagnostics
+    DiagnosticUnderlineWarn              { fg = yellow, gui = underline_strings }, -- Used to underline "Warn" diagnostics
+    DiagnosticUnderlineInfo              { fg = blue, gui = underline_strings }, -- Used to underline "Information" diagnostics
+    DiagnosticUnderlineHint              { fg = cyan, gui = underline_strings }, -- Used to underline "Hint" diagnostics
 
-    LspDiagnosticsFloatingError          { fg = red, gui = underline_strings }, -- Used to color "Error" diagnostic messages in diagnostics float
-    LspDiagnosticsFloatingWarning        { fg = yellow, gui = underline_strings }, -- Used to color "Warning" diagnostic messages in diagnostics float
-    LspDiagnosticsFloatingInformation    { fg = blue, gui = underline_strings }, -- Used to color "Information" diagnostic messages in diagnostics float
-    LspDiagnosticsFloatingHint           { fg = cyan, gui = underline_strings }, -- Used to color "Hint" diagnostic messages in diagnostics float
+    DiagnosticFloatingError              { fg = red, gui = underline_strings }, -- Used to color "Error" diagnostic messages in diagnostics float
+    DiagnosticFloatingWarn               { fg = yellow, gui = underline_strings }, -- Used to color "Warn" diagnostic messages in diagnostics float
+    DiagnosticFloatingInfo               { fg = blue, gui = underline_strings }, -- Used to color "Information" diagnostic messages in diagnostics float
+    DiagnosticFloatingHint               { fg = cyan, gui = underline_strings }, -- Used to color "Hint" diagnostic messages in diagnostics float
 
-    LspDiagnosticsSignError              { fg = red }, -- Used for "Error" signs in sign column
-    LspDiagnosticsSignWarning            { fg = yellow }, -- Used for "Warning" signs in sign column
-    LspDiagnosticsSignInformation        { fg = blue }, -- Used for "Information" signs in sign column
-    LspDiagnosticsSignHint               { fg = cyan }, -- Used for "Hint" signs in sign column
+    DiagnosticSignError                  { fg = red }, -- Used for "Error" signs in sign column
+    DiagnosticSignWarn                   { fg = yellow }, -- Used for "Warn" signs in sign column
+    DiagnosticSignInfo                   { fg = blue }, -- Used for "Information" signs in sign column
+    DiagnosticSignHint                   { fg = cyan }, -- Used for "Hint" signs in sign column
 
 	-- Treesitter
     TSAnnotation         { fg = yellow };    -- For C++/Dart attributes, annotations that can be attached to the code to denote some kind of meta information.
