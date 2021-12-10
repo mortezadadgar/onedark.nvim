@@ -309,6 +309,12 @@ local theme = lush(function()
 
 	-- Nvim-cmp
 	CmpItemAbbrDefault       { fg = comment_gray };
+
+	-- TSComments
+	TSNote                   { fg = blue };
+	TSWarning                { fg = yellow };
+	TSDanger                 { fg = red };
+
   }
 end)
 
