@@ -315,6 +315,9 @@ local theme = lush(function()
 	TSWarning                { fg = yellow };
 	TSDanger                 { fg = red };
 
+	-- LspSignature
+	LspSignatureActiveParameter { fg = white, bg = selection_gray };
+
   }
 end)
 
