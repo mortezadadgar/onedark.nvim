@@ -172,7 +172,25 @@ local highlights = {
 	{ hg = "GitSignsDelete",       fg = colors.red },
 
 	-- Nvim-cmp
-	{ hg = "CmpItemAbbrDefault",   fg = colors.gray1 },
+	{ hg = "CmpItemAbbrDefault",       fg = colors.gray1 },
+	{ hg = "CmpItemKindText",          fg = colors.magenta },
+	{ hg = "CmpItemKindMethod",        fg = colors.blue },
+	{ hg = "CmpItemKindFunction",      fg = colors.blue },
+	{ hg = "CmpItemKindConstructor",   fg = colors.yellow },
+	{ hg = "CmpItemKindField",         fg = colors.blue },
+	{ hg = "CmpItemKindClass",         fg = colors.yellow },
+	{ hg = "CmpItemKindInterface",     fg = colors.yellow },
+	{ hg = "CmpItemKindModule",        fg = colors.cyan },
+	{ hg = "CmpItemKindProperty",      fg = colors.blue },
+	{ hg = "CmpItemKindValue",         fg = colors.yellow },
+	{ hg = "CmpItemKindEnum",          fg = colors.yellow },
+	{ hg = "CmpItemKindKeyword",       fg = colors.red },
+	{ hg = "CmpItemKindSnippet",       fg = colors.green },
+	{ hg = "CmpItemKindFile",          fg = colors.blue },
+	{ hg = "CmpItemKindEnumMember",    fg = colors.cyan },
+	{ hg = "CmpItemKindConstant",      fg = colors.green },
+	{ hg = "CmpItemKindStruct",        fg = colors.yellow },
+	{ hg = "CmpItemKindTypeParameter", fg = colors.yellow },
 
 	-- TSComments
 	{ hg = "TSNote",               fg = colors.blue },
