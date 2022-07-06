@@ -199,6 +199,18 @@ local highlights = {
 
 	-- LspSignature
 	{ hg = "LspSignatureActiveParameter", fg = colors.white, bg = colors.gray2 },
+
+	-- NvimTree
+	{ hg = "NvimTreeNormal",           fg = colors.white, bg = colors.black_dark },
+	{ hg = "NvimTreeFolderIcon",       fg = colors.yellow };
+	{ hg = "NvimTreeOpenedFolderName", fg = colors.white },
+	{ hg = "NvimTreeEmptyFolderName",  fg = colors.white };
+	{ hg = "NvimTreeFolderName",       fg = colors.white };
+	{ hg = "NvimTreeVertSplit",        fg = colors.black };
+	{ hg = "NvimTreeIndentMarker",     fg = colors.comment_gray };
+	{ hg = "NvimTreeSpecialFile",      fg = colors.yellow };
+	{ hg = "NvimTreeRootFolder",       fg = colors.blue };
+	{ hg = "NvimTreeSignColumn",       link = "NvimTreeNormal" };
 }
 
 M.colorscheme = function()
