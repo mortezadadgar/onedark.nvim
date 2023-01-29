@@ -101,7 +101,7 @@ local highlights = {
 	{ hg = "Todo",           fg = colors.magenta }, -- (prefercolors.red) anything that needs extra attention; mostly the keywords TODO FIXME and XXX
 
     -- Nvim LSP
-	{ hg = "LspReferenceText",                     fg = colors.gray2 }, -- used for highlighting "text" references
+	{ hg = "LspReferenceText",                     fg = colors.black, bg = colors.blue }, -- used for highlighting "text" references
 	{ hg = "LspReferenceRead",                     link = "LspReferenceText" }, -- used for highlighting "read" references
 	{ hg = "LspReferenceWrite",                    link = "LspReferenceText" }, -- used for highlighting "write" references
 
@@ -131,31 +131,28 @@ local highlights = {
 	{ hg = "DiagnosticSignHint",                   fg = colors.cyan }, -- Used for "Hint" signs in sign column
 
 	-- Treesitter
-	{ hg = "TSSkmbol",             fg = colors.green }, -- For identifiers referring to symbols or atoms.
-	{ hg = "TSParameterReference", fg = colors.yellow }, -- For references to parameters of a function.
-	{ hg = "TSProperty",           fg = colors.red }, -- Same as `TSField`.
-	{ hg = "TSConstBuiltin",       fg = colors.yellow_dark },    -- For constant that are built in the language: `nil` in Lua.
-	{ hg = "TSKeyword",            fg = colors.magenta };    -- For keywords that don't fall in previous categories.
-	{ hg = "TSKeywordReturn",      fg = colors.magenta },
-	{ hg = "TSConstant",           fg = colors.white };    -- For constants
-	{ hg = "TSURI",                fg = colors.green },
-	{ hg = "TSFuncBuiltin",        fg = colors.cyan };    -- For builtin functions: `table.insert` in Lua.
+	{ hg = "@text.reference",      fg = colors.yellow }, -- For references to parameters of a function.
+	{ hg = "@property",            fg = colors.red }, -- Same as `TSField`.
+	{ hg = "@keyword",             fg = colors.magenta };    -- For keywords that don't fall in previous categories.
+	{ hg = "@constant",            fg = colors.white };    -- For constants
+	{ hg = "@constant.builtin",    fg = colors.yellow_dark },    -- For constant that are built in the language: `nil` in Lua.
+	{ hg = "@text.uri",            fg = colors.green },
+	{ hg = "@function.builtin",    fg = colors.cyan };    -- For builtin functions: `table.insert` in Lua.
 
 	-- TSmarkdown
-	{ hg = "markdownTSTitle",      fg = colors.blue };
+	{ hg = "@text.title.markdown", fg = colors.blue };
 
 	-- TSCss
-	{ hg = "cssTSType",            fg = colors.red },
-	{ hg = "cssTSProperty",        fg = colors.magenta },
+	{ hg = "@type.css",            fg = colors.red },
 
 	-- TSHtml
-	{ hg = "htmlTSOperator",       fg = colors.white },
+	{ hg = "@operator.html",       fg = colors.white },
 
 	-- TSGo
-	{ hg = "goTSNamespace",        fg = colors.white },
+	{ hg = "@namespace.go",        fg = colors.white },
 
 	-- TSC
-	{ hg = "cTSConstMacro",        fg = colors.magenta },
+	{ hg = "@constant.macro.c",    fg = colors.magenta },
 
     -- Telescope
 	{ hg = "TelescopeBorder",      fg = colors.blue },
@@ -193,9 +190,9 @@ local highlights = {
 	{ hg = "CmpItemKindTypeParameter", fg = colors.yellow },
 
 	-- TSComments
-	{ hg = "TSNote",               fg = colors.blue },
-	{ hg = "TSWarning",            fg = colors.yellow },
-	{ hg = "TSDanger",             fg = colors.red },
+	{ hg = "@text.note",               fg = colors.blue },
+	{ hg = "@text.warning",            fg = colors.yellow },
+	{ hg = "@text.danger",             fg = colors.red },
 
 	-- LspSignature
 	{ hg = "LspSignatureActiveParameter", fg = colors.white, bg = colors.gray2 },
