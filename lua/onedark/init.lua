@@ -144,9 +144,16 @@ local highlights = {
 
 	-- TSCss
 	{ hg = "@type.css",            fg = colors.red },
+	{ hg = "@property.class.css",  fg = colors.yellow_dark },
+	{ hg = "@property.id.css",     fg = colors.blue },
+	{ hg = "@property.css",        fg = colors.white },
+	{ hg = "@string.plain.css",    fg = colors.white },
+	{ hg = "@type.tag.css",        fg = colors.red },
+	{ hg = "@type.definition.css", fg = colors.red },
+	{ hg = "@type.qualifier",      fg = colors.magenta },
 
 	-- TSHtml
-	{ hg = "@operator.html",       fg = colors.white },
+	{ hg = "@tag.delimiter.html",  fg = colors.white },
 
 	-- TSGo
 	{ hg = "@namespace.go",        fg = colors.white },
