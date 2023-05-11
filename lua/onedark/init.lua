@@ -215,6 +215,14 @@ local highlights = {
 	{ hg = "NvimTreeSpecialFile",      fg = colors.yellow };
 	{ hg = "NvimTreeRootFolder",       fg = colors.blue };
 	{ hg = "NvimTreeSignColumn",       link = "NvimTreeNormal" };
+
+	-- Orgmode
+	{ hg = "OrgTODO",             fg = colors.blue, gui = styles.bold_strings },
+	{ hg = "OrgDONE",             fg = colors.green, gui = styles.italic_strings },
+	{ hg = "OrgTSHeadlineLevel1", fg = colors.blue, gui = styles.bold_strings },
+	{ hg = "OrgTSHeadlineLevel2", fg = colors.magenta, gui = styles.bold_strings },
+	{ hg = "OrgTSHeadlineLevel3", fg = colors.cyan, gui = styles.bold_strings },
+	{ hg = "OrgTSHeadlineLevel4", fg = colors.cyan, gui = styles.bold_strings },
 }
 
 M.colorscheme = function()
