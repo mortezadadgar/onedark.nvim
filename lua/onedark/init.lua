@@ -226,6 +226,9 @@ local highlights = {
 	{ hg = "OrgTSHeadlineLevel2", fg = colors.magenta, gui = styles.bold_strings },
 	{ hg = "OrgTSHeadlineLevel3", fg = colors.cyan, gui = styles.bold_strings },
 	{ hg = "OrgTSHeadlineLevel4", fg = colors.cyan, gui = styles.bold_strings },
+
+	-- Mini.files
+	{ hg = "MiniFilesBorderModified", fg = colors.red },
 }
 
 M.colorscheme = function()
