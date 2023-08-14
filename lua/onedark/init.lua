@@ -235,23 +235,13 @@ M.colorscheme = function()
 	local highlight_cmds = {}
 	for idx = 1, #highlights do
 		local highlight = highlights[idx]
-		if highlight.link then
-			highlight_cmds[idx] = string.format(
-			'highlight link %s %s',
-			highlight.hg,
-			highlight.link
-			)
-			goto continue
-		end
 		highlight_cmds[idx] = string.format(
-		'highlight %s guifg=%s guibg=%s gui=%s guisp=%s',
-		highlight.hg,
-		highlight.fg or 'NONE',
-		highlight.bg or 'NONE',
-		highlight.gui or 'NONE',
-		highlight.guisp or 'NONE'
+			'highlight %s guifg=%s guibg=%s gui=%s',
+			highlight.hg,
+			highlight.fg or 'NONE',
+			highlight.bg or 'NONE',
+			highlight.gui or 'NONE'
 		)
-		::continue::
 	end
 	vim.cmd(table.concat(highlight_cmds, '\n'))
 end
