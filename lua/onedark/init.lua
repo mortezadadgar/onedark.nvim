@@ -59,7 +59,7 @@ local highlights = {
 	{ hg = "TabLine",        fg = colors.white, bg = colors.black_dark },
 	{ hg = "TabLineFill",    bg = colors.black_dark },
 	{ hg = "TabLineSel",     fg = colors.white, bg = colors.black },
-	{ hg = "Title",          fg = colors.white },
+	{ hg = "Title",          fg = colors.blue },
 	{ hg = "Visual",         bg = colors.gray2, gui = styles.bold },
 	{ hg = "WarningMsg",     fg = colors.red },
 	{ hg = "WildMenu",       fg = colors.black, bg = colors.blue },
@@ -142,8 +142,13 @@ local highlights = {
 	{ hg = "@lsp.type.property",   fg = "@property" },
 	{ hg = "@lsp.type.variable",   fg = "@variable" },
 
-	-- TSmarkdown
-	{ hg = "@text.title.markdown", fg = colors.blue },
+	-- Markdown
+	{ hg = "@text.title.1.marker.markdown", fg = colors.blue, gui = styles.bold_strings },
+	{ hg = "@text.title.2.marker.markdown", fg = colors.magenta, gui = styles.bold_strings },
+	{ hg = "@text.title.3.marker.markdown", fg = colors.cyan, gui = styles.bold_strings },
+	{ hg = "@text.title.4.marker.markdown", fg = colors.cyan, gui = styles.bold_strings },
+	{ hg = "@punctuation.special.markdown", fg = colors.blue },
+	{ hg = "@text.literal.markdown_inline", fg = colors.yellow },
 
 	-- TSCss
 	{ hg = "@type.css",            fg = colors.red },
