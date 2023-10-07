@@ -161,6 +161,17 @@ local highlights = {
 	{ hg = "@type.definition.css", fg = colors.red },
 	{ hg = "@type.qualifier",      fg = colors.magenta },
 
+	-- TSscss
+	{ hg = "@type.scss",            fg = colors.red },
+	{ hg = "@property.class.scss",  fg = colors.yellow_dark },
+	{ hg = "@property.id.scss",     fg = colors.blue },
+	{ hg = "@property.scss",        fg = colors.white },
+	{ hg = "@string.plain.scss",    fg = colors.white },
+	{ hg = "@type.tag.scss",        fg = colors.red },
+	{ hg = "@type.definition.scss", fg = colors.red },
+	{ hg = "@type.qualifier",       fg = colors.magenta },
+
+
 	-- TSHtml
 	{ hg = "@tag.delimiter.html",  fg = colors.white },
 
