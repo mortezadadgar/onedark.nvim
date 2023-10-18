@@ -151,7 +151,7 @@ local highlights = {
 	{ hg = "@punctuation.special.markdown", fg = colors.blue },
 	{ hg = "@text.literal.markdown_inline", fg = colors.yellow },
 
-	-- TSCss
+	-- Css
 	{ hg = "@type.css",            fg = colors.red },
 	{ hg = "@property.class.css",  fg = colors.yellow_dark },
 	{ hg = "@property.id.css",     fg = colors.blue },
@@ -161,7 +161,7 @@ local highlights = {
 	{ hg = "@type.definition.css", fg = colors.red },
 	{ hg = "@type.qualifier",      fg = colors.magenta },
 
-	-- TSscss
+	-- Scss
 	{ hg = "@type.scss",            fg = colors.red },
 	{ hg = "@property.class.scss",  fg = colors.yellow_dark },
 	{ hg = "@property.id.scss",     fg = colors.blue },
@@ -172,13 +172,13 @@ local highlights = {
 	{ hg = "@type.qualifier",       fg = colors.magenta },
 
 
-	-- TSHtml
+	-- Html
 	{ hg = "@tag.delimiter.html",  fg = colors.white },
 
-	-- TSGo
+	-- Go
 	{ hg = "@namespace.go",        fg = colors.white },
 
-	-- TSC
+	-- C
 	{ hg = "@constant.macro.c",    fg = colors.magenta },
 
     -- Telescope
