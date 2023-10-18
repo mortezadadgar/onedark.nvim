@@ -171,6 +171,8 @@ local highlights = {
 	{ hg = "@type.definition.scss", fg = colors.red },
 	{ hg = "@type.qualifier",       fg = colors.magenta },
 
+	-- vimdoc
+	{ hg = "@parameter.vimdoc",     fg = colors.blue },
 
 	-- Html
 	{ hg = "@tag.delimiter.html",  fg = colors.white },
