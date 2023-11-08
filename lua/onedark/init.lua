@@ -249,6 +249,9 @@ local highlights = {
 
 	-- Mini.files
 	{ hg = "MiniFilesBorderModified", fg = colors.red },
+
+	-- nextrw
+	{ hg = "netrwMarkFile", bg = colors.gray2 },
 }
 
 M.colorscheme = function()
