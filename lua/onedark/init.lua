@@ -30,6 +30,7 @@ local highlights = {
 	{ hg = "Comment",        fg = colors.gray1, gui = styles.italic },
 	{ hg = "ColorColumn",    bg = colors.gray3 },
 	{ hg = "Cursor",         fg = colors.black, bg = colors.blue },
+	{ hg = "Conceal",        bg = colors.gray3 },
 	{ hg = "CursorColumn",   bg = colors.gray3 },
 	{ hg = "CursorLine",     bg = colors.gray3 },
 	{ hg = "Directory",      fg = colors.blue },
