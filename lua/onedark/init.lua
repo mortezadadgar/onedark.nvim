@@ -252,6 +252,14 @@ local highlights = {
 
 	-- nextrw
 	{ hg = "netrwMarkFile", bg = colors.gray2 },
+
+	-- Neogit
+	{ hg = "NeogitDiffAddHighlight", bg = colors.black_light, fg = colors.green },
+	{ hg = "NeogitDiffDeleteHighlight", bg = colors.black_light, fg = colors.red },
+	{ hg = "NeogitDiffAdd", bg = colors.black_light, fg = colors.green },
+	{ hg = "NeogitDiffDelete", bg = colors.black_light, fg = colors.red },
+	{ hg = "NeogitDiffContextHighlight", bg = colors.black_light },
+	{ hg = "NeogitDiffContext", bg = colors.black_light },
 }
 
 M.colorscheme = function()
