@@ -262,6 +262,9 @@ local highlights = {
 	{ hg = "NeogitDiffDelete", bg = colors.black_light, fg = colors.red },
 	{ hg = "NeogitDiffContextHighlight", bg = colors.black_light },
 	{ hg = "NeogitDiffContext", bg = colors.black_light },
+
+	--- nnn
+	{ hg = "NnnNormal",    fg = colors.white, bg = colors.black_light },
 }
 
 M.colorscheme = function()
