@@ -22,8 +22,9 @@ local styles = {
 	italic = "italic",
 	underline = "underline",
 	bold_italic = "bold italic",
+	strikethrough = "strikethrough",
 	bold_underline = "bold underline",
-	italic_underline = "italic underline"
+	italic_underline = "italic underline",
 }
 
 local highlights = {
@@ -147,12 +148,15 @@ local highlights = {
 	{ hg = "@lsp.type.variable",   fg = "@variable" },
 
 	-- Markdown
-	{ hg = "@text.title.1.marker.markdown", fg = colors.blue, gui = styles.bold_strings },
-	{ hg = "@text.title.2.marker.markdown", fg = colors.magenta, gui = styles.bold_strings },
-	{ hg = "@text.title.3.marker.markdown", fg = colors.cyan, gui = styles.bold_strings },
-	{ hg = "@text.title.4.marker.markdown", fg = colors.cyan, gui = styles.bold_strings },
-	{ hg = "@punctuation.special.markdown", fg = colors.blue },
-	{ hg = "@text.literal.markdown_inline", fg = colors.yellow },
+	{ hg = "@text.title.1.marker.markdown",  fg = colors.blue, gui = styles.bold },
+	{ hg = "@text.title.2.marker.markdown",  fg = colors.magenta, gui = styles.bold },
+	{ hg = "@text.title.3.marker.markdown",  fg = colors.cyan, gui = styles.bold },
+	{ hg = "@text.title.4.marker.markdown",  fg = colors.cyan, gui = styles.bold },
+	{ hg = "@punctuation.special.markdown",  fg = colors.blue },
+	{ hg = "@text.literal.markdown_inline",  fg = colors.yellow },
+	{ hg = "@text.strike.markdown_inline",   gui = styles.strikethrough },
+	{ hg = "@text.strong.markdown_inline",   gui = styles.bold },
+	{ hg = "@text.emphasis.markdown_inline", gui = styles.italic },
 
 	-- Css
 	{ hg = "@type.css",            fg = colors.red },
