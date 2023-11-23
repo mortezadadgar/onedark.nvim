@@ -192,7 +192,8 @@ local highlights = {
 	{ hg = "@constant.macro.c",    fg = colors.magenta },
 
     -- Telescope
-	{ hg = "TelescopeBorder",      fg = colors.blue },
+	{ hg = "TelescopeBorder",      fg = colors.blue, bg = colors.black_light },
+	{ hg = "TelescopeNormal",      fg = colors.white, bg = colors.black_light },
 
 	-- VimWiki
 	{ hg = "VimwikiHeader1",       fg = colors.blue, gui = styles.bold },
