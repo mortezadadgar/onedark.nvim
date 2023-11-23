@@ -14,7 +14,8 @@ local colors = {
 	white = "#c0c0c0",
 	gray1 = "#5c6370",
 	gray2 = "#3e4451",
-	gray3 = "#2c323c"
+	gray3 = "#2c323c",
+	gray4 = "#333842"
 }
 
 local styles = {
@@ -60,7 +61,7 @@ local highlights = {
 	{ hg = "QuickFixLine",   fg = colors.white, bg = colors.gray2 },
 	{ hg = "Search",         fg = colors.black, bg = colors.green },
 	{ hg = "SpellBad",       gui = styles.underline },
-	{ hg = "StatusLine",     fg = colors.white, bg = colors.black },
+	{ hg = "StatusLine",     fg = colors.white, bg = colors.gray4 },
 	{ hg = "StatusLineNC",   },
 	{ hg = "TabLine",        fg = colors.white, bg = colors.black_dark },
 	{ hg = "TabLineFill",    bg = colors.black_dark },
