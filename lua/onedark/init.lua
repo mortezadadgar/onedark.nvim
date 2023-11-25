@@ -99,6 +99,7 @@ local highlights = {
 
 	{ hg = "Special",        fg = colors.blue },
 	{ hg = "SpecialChar",    fg = colors.green },
+	{ hg = "SpecialKey",     fg = colors.gray1 },
 	{ hg = "Tag",            fg = colors.red },
 	{ hg = "Delimiter",      fg = colors.white },
 	{ hg = "SpecialComment", fg = colors.gray1, gui = styles.italic },
