@@ -272,6 +272,9 @@ local highlights = {
 
 	--- nnn
 	{ hg = "NnnNormal",    fg = colors.white, bg = colors.black_light },
+
+	-- treesitter-context
+	{ hg = "TreesitterContext",    fg = colors.white, bg = colors.black },
 }
 
 M.colorscheme = function()
