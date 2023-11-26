@@ -207,9 +207,10 @@ local highlights = {
 	{ hg = "VimwikiHeader4",       fg = colors.cyan, gui = styles.bold },
 
 	-- Gitsings
-	{ hg = "GitSignsAdd",          fg = colors.yellow },
-	{ hg = "GitSignsChange",       fg = colors.blue },
-	{ hg = "GitSignsDelete",       fg = colors.red },
+	{ hg = "GitSignsAdd",            fg = colors.yellow },
+	{ hg = "GitSignsChange",         fg = colors.blue },
+	{ hg = "GitSignsDelete",         fg = colors.red },
+	{ hg = "GitSignsDeletePreview ", bg = colors.red_dark },
 
 	-- Nvim-cmp
 	{ hg = "CmpItemAbbrDefault",       fg = colors.gray1 },
