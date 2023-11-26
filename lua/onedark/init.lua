@@ -45,6 +45,7 @@ local highlights = {
 	{ hg = "MoreMsg",        fg = colors.green },
 	{ hg = "VertSplit",      fg = colors.gray1 },
 	{ hg = "Folded",         fg = colors.gray1 },
+	{ hg = "FoldColumn",     fg = colors.white, bg = colors.black },
 	{ hg = "IncSearch",      fg = colors.blue, bg = colors.gray1 },
 	{ hg = "LineNr",         fg = colors.gray1 },
 	{ hg = "CursorLineNr",   fg = colors.white },
