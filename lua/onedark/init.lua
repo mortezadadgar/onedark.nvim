@@ -254,13 +254,9 @@ local highlights = {
 	-- nextrw
 	{ "netrwMarkFile", { bg = colors.gray2 } },
 
-	-- Neogit
-	{ "NeogitDiffAddHighlight", { bg = colors.gray3, fg = colors.green } },
-	{ "NeogitDiffDeleteHighlight", { bg = colors.gray3, fg = colors.red } },
-	{ "NeogitDiffAdd", { bg = colors.gray3, fg = colors.green } },
-	{ "NeogitDiffDelete", { bg = colors.gray3, fg = colors.red } },
-	{ "NeogitDiffContextHighlight", { bg = colors.gray3 } },
-	{ "NeogitDiffContext", { bg = colors.gray3 } },
+	-- neogit
+	{ "NeogitDiffAddHighlight", { fg = colors.green, bg = colors.green_dark, bold = true } },
+	{ "NeogitDiffDeleteHighlight", { fg = colors.red, bg = colors.red_dark, bold = true } },
 
 	--- nnn
 	{ "NnnNormal", { fg = colors.white, bg = colors.gray3 } },
