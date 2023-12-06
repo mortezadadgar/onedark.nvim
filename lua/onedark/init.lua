@@ -5,9 +5,9 @@ local colors = {
 	black = "#282c34",
 	black_dark = "#22262e",
 	red = "#e06c75",
+	red_dark = "#4F343A",
 	green = "#98c379",
 	green_dark = "#3E493D",
-	red_dark = "#4F343A",
 	yellow = "#e5c07b",
 	yellow_dark = "#d19a66",
 	blue = "#61afef",
@@ -32,14 +32,17 @@ local highlights = {
 	{ "DiffChange", { bg = colors.green_dark } },
 	{ "DiffDelete", { fg = colors.gray2 } },
 	{ "DiffText", { bg = colors.green, fg = colors.black } },
-	{ "EndOfBuffer", { fg = colors.black } },
+	{ "EndOfBuffer", { fg = colors.gray1 } },
 	{ "ErrorMsg", { fg = colors.red, bold = true } },
 	{ "MoreMsg", { fg = colors.green } },
-	{ "VertSplit", { fg = colors.gray1 } },
+	{ "MsgSeparator", { bg = colors.black, fg = colors.gray1 } },
+	{ "WinSeparator", { link = "MsgSeparator" } },
+	{ "ModeMsg", { fg = colors.white } },
 	{ "Folded", { fg = colors.gray1 } },
 	{ "FoldColumn", { fg = colors.white, bg = colors.black } },
 	{ "IncSearch", { fg = colors.blue, bg = colors.gray1 } },
 	{ "LineNr", { fg = colors.gray1 } },
+	{ "Whitespace", { fg = colors.gray2 } },
 	{ "CursorLineNr", { fg = colors.white } },
 	{ "SignColumn", { bg = colors.black } },
 	{ "MatchParen", { fg = colors.blue, bg = colors.gray1 } },
@@ -53,6 +56,7 @@ local highlights = {
 	{ "QuickFixLine", { fg = colors.white, bg = colors.gray2 } },
 	{ "Search", { fg = colors.blue, bg = colors.gray1 } },
 	{ "CurSearch", { link = "Search" } }, -- hlsearch = false
+	{ "SpecialKey", { fg = colors.gray1 } },
 	{ "SpellBad", { underline = true } },
 	{ "StatusLine", { fg = colors.white, bg = colors.gray3 } },
 	{ "StatusLineNC", {} },
@@ -63,7 +67,8 @@ local highlights = {
 	{ "Visual", { bg = colors.gray2, bold = true } },
 	{ "WarningMsg", { fg = colors.red } },
 	{ "WildMenu", { fg = colors.black, bg = colors.blue } },
-	{ "Constant", { fg = colors.cyan } },
+
+	{ "Constant", { fg = colors.white } },
 	{ "String", { fg = colors.green } },
 	{ "Character", { fg = colors.green } },
 	{ "Float", { fg = colors.yellow_dark } },
@@ -77,7 +82,7 @@ local highlights = {
 	{ "Repeat", { fg = colors.magenta } },
 	{ "Label", { fg = colors.red } },
 	{ "Operator", { fg = colors.magenta } },
-	{ "Keyword", { fg = colors.red } },
+	{ "Keyword", { fg = colors.magenta } },
 	{ "Exception", { fg = colors.magenta } },
 
 	{ "PreProc", { fg = colors.yellow } },
@@ -93,13 +98,15 @@ local highlights = {
 
 	{ "Special", { fg = colors.blue } },
 	{ "SpecialChar", { fg = colors.green } },
-	{ "SpecialKey", { fg = colors.gray1 } },
 	{ "Tag", { fg = colors.red } },
 	{ "Delimiter", { fg = colors.white } },
 	{ "SpecialComment", { fg = colors.gray1, italic = true } },
 
-	{ "Error", { bg = colors.black } },
-	{ "Todo", { fg = colors.magenta } },
+	{ "Error", { fg = colors.black, bg = colors.red } },
+	{ "Todo", { fg = colors.blue } },
+	{ "Bold", { bold = true } },
+	{ "Italic", { italic = true } },
+	{ "Underlined", { underline = true } },
 
 	-- Nvim LSP
 	{ "LspReferenceText", { fg = colors.black, bg = colors.blue } },
@@ -134,10 +141,8 @@ local highlights = {
 	-- Treesitter
 	{ "@text.reference", { fg = colors.yellow } },
 	{ "@property", { fg = colors.red } },
-	{ "@keyword", { fg = colors.magenta } },
-	{ "@constant", { fg = colors.white } },
+	{ "@variable", { fg = colors.white } },
 	{ "@constant.builtin", { fg = colors.yellow_dark } },
-	{ "@text.uri", { fg = colors.green } },
 	{ "@function.builtin", { fg = colors.cyan } },
 
 	-- Markdown
