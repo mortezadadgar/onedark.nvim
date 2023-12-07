@@ -268,6 +268,11 @@ local highlights = {
 
 	-- treesitter-context
 	{ "TreesitterContext", { fg = colors.white, bg = colors.black } },
+
+	-- workaround vim bug #11277
+	{ "markdownError", { fg = colors.white } },
+	{ "luaParenError", { fg = colors.white } },
+	{ "luaError", { fg = colors.white } },
 }
 
 M.colorscheme = function()
