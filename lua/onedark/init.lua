@@ -205,7 +205,7 @@ local highlights = {
 	{ "GitSignsDeletePreview", { bg = colors.red_dark } },
 
 	-- Nvim-cmp
-	{ "CmpItemAbbrDefault", { fg = colors.gray1 } },
+	{ "CmpItemAbbr", { fg = colors.gray1 } },
 	{ "CmpItemKindText", { fg = colors.magenta } },
 	{ "CmpItemKindMethod", { fg = colors.blue } },
 	{ "CmpItemKindFunction", { fg = colors.blue } },
