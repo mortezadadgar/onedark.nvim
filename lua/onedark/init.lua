@@ -47,7 +47,7 @@ local highlights = {
 	{ "SignColumn", { bg = colors.black } },
 	{ "MatchParen", { fg = colors.blue, bg = colors.gray1 } },
 	{ "NonText", { fg = colors.white } },
-	{ "Normal", { fg = colors.white, bg = colors.black } },
+	{ "Normal", { fg = colors.white } },
 	{ "NormalFloat", { bg = colors.gray3 } },
 	{ "FloatBorder", { bg = colors.gray3, fg = colors.blue } },
 	{ "Pmenu", { fg = colors.white, bg = colors.gray3 } },
