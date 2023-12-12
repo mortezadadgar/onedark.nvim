@@ -106,7 +106,7 @@ local highlights = {
 	{ "Todo", { fg = colors.blue } },
 	{ "Bold", { bold = true } },
 	{ "Italic", { italic = true } },
-	{ "Underlined", { underline = true } },
+	{ "Underlined", {} },
 
 	-- Nvim LSP
 	{ "LspReferenceText", { fg = colors.black, bg = colors.blue } },
