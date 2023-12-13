@@ -109,7 +109,7 @@ local highlights = {
 	{ "Underlined", {} },
 
 	-- Nvim LSP
-	{ "LspReferenceText", { fg = colors.black, bg = colors.blue } },
+	{ "LspReferenceText", { link = "IncSearch" } },
 	{ "LspReferenceRead", { link = "LspReferenceText" } },
 	{ "LspReferenceWrite", { link = "LspReferenceText" } },
 
@@ -273,6 +273,9 @@ local highlights = {
 	{ "markdownError", { fg = colors.white } },
 	{ "luaParenError", { fg = colors.white } },
 	{ "luaError", { fg = colors.white } },
+
+	-- dirvish
+	{ "DirvishArg", { bg = colors.gray2 } },
 }
 
 M.colorscheme = function()
