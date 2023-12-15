@@ -191,6 +191,7 @@ local highlights = {
 	-- Telescope
 	{ "TelescopeBorder", { fg = colors.blue, bg = colors.gray3 } },
 	{ "TelescopeNormal", { fg = colors.white, bg = colors.gray3 } },
+	{ "TelescopePrompt", { fg = colors.white, bg = colors.gray3 } },
 
 	-- VimWiki
 	{ "VimwikiHeader1", { fg = colors.blue, bold = true } },
