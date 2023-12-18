@@ -281,6 +281,12 @@ local highlights = {
 
 	-- dirvish
 	{ "DirvishArg", { bg = colors.gray2 } },
+
+	-- git-conflict
+	{ "GitConflictCurrent", { bg = colors.red_dark } },
+	{ "GitConflictCurrentLabel", { bg = colors.gray1 } },
+	{ "GitConflictIncoming", { bg = colors.green_dark } },
+	{ "GitConflictIncomingLabel", { bg = colors.gray1 } },
 }
 
 M.colorscheme = function()
