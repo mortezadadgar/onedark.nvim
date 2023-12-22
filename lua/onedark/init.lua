@@ -287,6 +287,14 @@ local highlights = {
 	{ "GitConflictCurrentLabel", { bg = colors.gray1 } },
 	{ "GitConflictIncoming", { bg = colors.green_dark } },
 	{ "GitConflictIncomingLabel", { bg = colors.gray1 } },
+
+	-- fzfLua
+	-- make it more like telescope
+	{ "FzfLuaNormal", { bg = colors.gray3 } },
+	{ "FzfLuaBorder", { fg = colors.blue, bg = colors.gray3 } },
+	{ "FzfLuaPreviewBorder", { link = "FzfLuaBorder" } },
+	{ "FzfLuaHeaderBind", { fg = colors.white } },
+	{ "FzfLuaHeaderText", { fg = colors.white, bold = true } },
 }
 
 M.colorscheme = function()
