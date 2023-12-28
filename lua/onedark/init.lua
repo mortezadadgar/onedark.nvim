@@ -192,6 +192,10 @@ local highlights = {
 	{ "TelescopeBorder", { fg = colors.blue, bg = colors.gray3 } },
 	{ "TelescopeNormal", { fg = colors.white, bg = colors.gray3 } },
 	{ "TelescopePrompt", { fg = colors.white, bg = colors.gray3 } },
+	{ "TelescopeResultsDiffAdd", { fg = colors.magenta } },
+	{ "TelescopeResultsDiffChange", { fg = colors.green } },
+	{ "TelescopeResultsDiffDelete", { fg = colors.red } },
+	{ "TelescopeResultsDiffUntracked", { fg = colors.magenta } },
 
 	-- VimWiki
 	{ "VimwikiHeader1", { fg = colors.blue, bold = true } },
