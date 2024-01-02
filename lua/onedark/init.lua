@@ -297,8 +297,11 @@ local highlights = {
 	{ "FzfLuaNormal", { bg = colors.gray3 } },
 	{ "FzfLuaBorder", { fg = colors.blue, bg = colors.gray3 } },
 	{ "FzfLuaPreviewBorder", { link = "FzfLuaBorder" } },
-	{ "FzfLuaHeaderBind", { fg = colors.white } },
+	{ "FzfLuaHeaderBind", { link = "Normal" } },
 	{ "FzfLuaHeaderText", { fg = colors.white, bold = true } },
+	{ "FzfLuaBufNr", { link = "Normal" } },
+	{ "FzfLuaBufFlagCur", { fg = colors.blue } },
+	{ "FzfLuaBufFlagAlt", { fg = colors.gray1 } },
 }
 
 M.colorscheme = function()
